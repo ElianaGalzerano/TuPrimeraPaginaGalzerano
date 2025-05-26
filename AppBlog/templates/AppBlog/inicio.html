@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
+{% extends 'AppBlog/base.html' %}
 
-<head>
-    <title>Inicio</title>
-</head>
+{% block title %}Inicio{% endblock %}
 
-<body>
-    <h1>Bienvenido a la página de inicio</h1>
-</body>
-
-</html>
+{% block content %}
+<h2>Bienvenido a la página de inicio</h2>
+<p>Esta es la sección principal de la app.</p>
+{% endblock %}

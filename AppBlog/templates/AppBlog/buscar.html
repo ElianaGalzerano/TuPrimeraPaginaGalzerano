@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html>
+{% extends 'AppBlog/base.html' %}
+{% block title %}Buscar{% endblock %}
 
-<head>
-    <title>Buscar</title>
-</head>
+{% block content %}
+<h2>Buscar curso</h2>
 
-<body>
-    <h1>Formulario de búsqueda</h1>
-</body>
+<form method="get">
+    <div class="mb-3">
+        <label for="curso" class="form-label">Nombre del curso:</label>
+        <input type="text" id="curso" name="curso" class="form-control" placeholder="Ej: Python">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
 
-</html>
+{% if resultado is not None %}
+<hr>
+<h4>Resultados:</h4>
+{% if resultado %}
+<ul>
+    {% for curso in resultado %}
+    <li>{{ curso.nombre }} - Camada: {{ curso.camada }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No se encontraron cursos con ese nombre.</p>
+{% endif %}
+{% endif %}
+
+{% endblock %}

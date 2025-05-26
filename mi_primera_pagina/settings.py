@@ -29,10 +29,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mi_primera_pagina.urls'
 
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'AppBlog', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

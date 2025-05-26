@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends 'AppBlog/base.html' %}
+{% block title %}Formulario Curso{% endblock %}
 
-<head>
-    <title>Cursos</title>
-</head>
-
-<body>
-    <h1>Listado de cursos</h1>
-</body>
-
-</html>
+{% block content %}
+<h2>Formulario - Agregar Curso</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+{% endblock %}
