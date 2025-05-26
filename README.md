@@ -1,34 +1,57 @@
-<<<<<<< HEAD
-# TuPrimeraPaginaGalzerano
+TuPrimeraPaginaGalzerano
+Proyecto final del curso de Python y Django - CoderHouse
+Aplicación web estilo blog con herencia de plantillas, formularios, administración y diseño responsive.
 
-## Cómo probar el proyecto
 
-1. Crear entorno virtual y activarlo:
-   ```bash
-   python -m venv venv
-   .\venv\Scripts\activate  # en Windows
-   ```
+📌 Cómo probar el proyecto
+Clonar el repositorio:
+git clone https://github.com/ElianaGalzerano/TuPrimeraPaginaGalzerano.git
+cd TuPrimeraPaginaGalzerano
 
-2. Instalar Django:
-   ```bash
-   pip install django
-   ```
+Crear entorno virtual y activarlo:
+python -m venv venv
+.\venv\Scripts\activate # En Windows
 
-3. Aplicar migraciones:
-   ```bash
-   python manage.py migrate
-   ```
+Instalar Django:
+pip install django
 
-4. Ejecutar el servidor:
-   ```bash
-   python manage.py runserver
-   ```
+Aplicar migraciones:
+python manage.py makemigrations
+python manage.py migrate
 
-5. Acceder a:
-   - `/` para ver inicio
-   - `/cursos/`, `/profesores/`, `/entregables/` para cargar datos
-   - `/buscar/` para buscar curso por nombre
+Crear superusuario (opcional para ver admin):
+python manage.py createsuperuser
 
-=======
-# mi_primera_pagina
->>>>>>> b44ec7a793a966466a6fbe8768416b7d2a1ee02e
+Ejecutar el servidor:
+python manage.py runserver
+
+Acceder a la app:
+
+/ → Página de inicio
+
+/cursos/ → Agregar curso
+
+/profesores/ → Agregar profesor
+
+/entregables/ → Agregar entregable
+
+/buscar/ → Buscar curso por nombre
+
+/admin/ → Panel de administración de Django
+
+✅ Funcionalidades incluidas
+✔️ Herencia de plantillas con base.html
+✔️ Modelo con 3 clases (Curso, Profesor, Entregable)
+✔️ Formularios para insertar datos desde el navegador
+✔️ Formulario de búsqueda de cursos por nombre
+✔️ Panel de administración (/admin) con modelos registrados
+✔️ Estilos aplicados con Bootstrap 5
+✔️ Banner visual con fondo decorativo
+✔️ Footer con derechos de autor personalizado
+
+🧠 Desarrollado como parte del curso de CoderHouse - Python
+📅 Entrega: Mayo 2025
+👩‍💻 Autora: Eliana Galzerano
+
+
+
