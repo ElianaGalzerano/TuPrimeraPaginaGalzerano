@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TuPrimeraPaginaGalzerano
 
 ## Cómo probar el proyecto
@@ -28,3 +29,6 @@
    - `/cursos/`, `/profesores/`, `/entregables/` para cargar datos
    - `/buscar/` para buscar curso por nombre
 
+=======
+# mi_primera_pagina
+>>>>>>> b44ec7a793a966466a6fbe8768416b7d2a1ee02e
